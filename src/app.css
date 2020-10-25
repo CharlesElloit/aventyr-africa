@@ -1,0 +1,72 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --bold-font-weight: 700;
+  --black-font-weight: 900;
+  --medium-font-weight: 500;
+  --regular-font-weight: 300;
+  --text-gray-color: #666666;
+  --background-color: #ffffff;
+  --link-color: rgb(46, 45, 45);
+  --dark-background-color: #dddddd;
+  --box-shadow: 1px 2px 2px 1px #dadada;
+  --font-family: "Montserrat", sans-serif;
+  --border-top: 1px solid rgb(221, 221, 221);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+p {
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.container {
+  width: 70% !important;
+  margin: 0 auto !important;
+}
+
+.recommandedTours {
+  display: flex;
+  padding: 1rem;
+  word-wrap: wrap;
+}
+
+.card {
+  margin-right: 1rem !important;
+}
+
+/* whole app madia queries */
+@media (max-width: 667px) {
+  .card {
+    margin-right: 0 !important;
+  }
+  .recommandedTours {
+    padding-right: 0;
+  }
+}

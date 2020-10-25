@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body style="background: rgba(223, 223, 223, 0.867)">
+    <div class="search-component">
+      <div class="location">
+        <label for="location">Location</label>
+        <input type="text" placeholder="Where are you going?" />
+      </div>
+      <div class="check-in">
+        <label for="check-in">Check in</label>
+        <input type="month" placeholder="Add dates" />
+      </div>
+      <div class="check-out">
+        <label for="check-out">Check out</label>
+        <input type="month" placeholder="Add dates" />
+      </div>
+      <div class="guest">
+        <label for="guest">Infants</label>
+        <input type="text" placeholder="Add infants" />
+      </div>
+      <div class="search-btn">
+        <input type="button" value="Search" />
+      </div>
+    </div>
+
+    <style>
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        /* text-align: center; */
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .search-component {
+        width: 55%;
+        display: flex;
+        height: 60px;
+        margin: 200px;
+        background: white;
+        padding: 0rem 2rem;
+        border-radius: 50px;
+        transition: 0.3s ease;
+      }
+      .search-component input {
+        border: none;
+        background: none;
+      }
+
+      .search-component input[type="button"] {
+        width: 90px;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        padding: 0.5rem;
+        outline-width: 0;
+        margin: 0.3rem 0 0 0.6rem;
+        border-radius: 50px;
+        background-color: #eb4545;
+        box-shadow: 1px 2px 2px 1px #cecece;
+        transition: 0.3s ease;
+      }
+
+      .search-component input[type="button"]:focus {
+        width: 90px;
+        border-radius: 50px;
+        transform: scale(0.95);
+      }
+
+      .check-in,
+      .check-out,
+      .guest,
+      .location,
+      .serach-btn {
+        width: 145px;
+        padding: 0.7rem;
+      }
+
+      .check-in:focus,
+      .check-out:focus,
+      .guest:focus,
+      .location:focus,
+      .serach-btn:focus {
+        border-radius: 50px;
+        box-shadow: -1px 2px 2px 1px #d3d3d3;
+      }
+
+      .check-in:hover,
+      .check-out:hover,
+      .guest:hover,
+      .location:hover,
+      .serach-btn:hover {
+        border-radius: 50px;
+        box-shadow: 1px 2px 2px 1px #d3d3d3;
+      }
+
+      .location {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      label {
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </body>
+</html>

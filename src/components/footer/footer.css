@@ -1,0 +1,49 @@
+footer {
+  width: 100%;
+  height: 50vh;
+  border-top: var(--border-top);
+  background-color: #f7f7f7;
+}
+
+footer .footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 90% 10%;
+  grid-template-areas:
+    "about community support mobile"
+    "copyright copyright copyright copyright";
+  margin: 3rem;
+}
+
+.footer-title {
+  font-size: 0.8rem;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+footer .link {
+  display: flex;
+  font-size: 0.8rem;
+  flex-direction: column;
+}
+
+.link-item:hover a {
+  background: #dadada;
+}
+.link a {
+  padding-top: 1rem;
+  /* margin: 0.8rem 0 0 0; */
+  color: var(--text-gray-color);
+}
+
+footer .copyright {
+  padding: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: copyright;
+  color: var(--text-gray-color);
+  border-top: var(--border-top);
+}

@@ -1,0 +1,186 @@
+.search-component {
+  width: 71%;
+  display: flex;
+  height: 60px;
+  background: #fcfcfc;
+  padding: 0rem 2rem;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  justify-content: space-between;
+  /* box-shadow: 1px 2px 2px 1px #cecece; */
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+  /* animation: fadeOut ease 10s;
+  -webkit-animation: fadeOut ease 10s;
+  -o-animation: fadeOut ease 10s;
+  -ms-animation: fadeOut ease 10s; */
+}
+.search-component input {
+  border: none;
+  background: none;
+}
+
+.search-component .search-button {
+  width: 90px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  outline-width: 0;
+  margin: 0.3rem 0 0 0.6rem;
+  border-radius: 50px;
+  /* background-color: #eb4545; */
+  background-color: #000000;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 1px 2px 2px 1px #cecece; */
+  transition: 0.3s ease;
+}
+
+.search-component input[type="button"] {
+  cursor: pointer;
+  padding: 0.3rem;
+  outline-width: 0;
+}
+
+.search-component input[type="button"]:focus {
+  outline: none;
+}
+
+.search-component .search-button:focus {
+  width: 90px;
+  border-radius: 50px;
+  transform: scale(0.95);
+}
+
+.check-in {
+  width: 170px;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.check-in,
+.check-out,
+.guest,
+.location,
+.serach-btn {
+  width: 170px;
+  padding: 0.7rem;
+}
+
+.check-in:focus,
+.check-out:focus,
+.guest:focus,
+.input:focus,
+.location:focus,
+.serach-btn:focus {
+  border-radius: 50px;
+  box-shadow: -1px 2px 2px 1px #d3d3d3;
+}
+
+.check-in:hover,
+.check-out:hover,
+.guest:hover,
+.location:hover,
+.serach-btn:hover {
+  border-radius: 50px;
+  box-shadow: 1px 2px 2px 1px #d3d3d3;
+}
+
+.location,
+.check-in,
+.check-out,
+.guest {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar {
+  width: 100% !important;
+}
+
+/*calendar modification */
+
+/* .MuiPickersBasePicker-container {
+  height: 350px !important;
+  width: 700px !important;
+}
+.MuiPaper-rounded {
+  border-radius: 25px !important;
+}
+
+.MuiPickersToolbar-toolbar {
+  height: 100px;
+  display: flex;
+  color: #000000 !important;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff !important;
+}
+
+.MuiPickersDay-daySelected {
+  text-align: center !important;
+  color: rgb(107, 107, 107) !important;
+  font-weight: 500 !important;
+  border: 2px solid #d1d1d1 !important;
+  background: none !important;
+}
+
+.MuiPickersToolbarText-toolbarBtnSelected {
+  color: #6b6b6b !important;
+} */
+
+/* KeyFrames */
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

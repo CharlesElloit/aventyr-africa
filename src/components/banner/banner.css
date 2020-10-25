@@ -1,0 +1,74 @@
+.banner {
+  margin-top: 0;
+  padding-top: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: 1;
+  background-image: url("../../images/banner4.jpg");
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
+.banner-content {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15%;
+}
+
+.banner-content,
+.banner-title > h1 {
+  font-size: 2rem;
+}
+
+.banner-title {
+  width: 50%;
+  color: white;
+}
+
+.explore_near_by_btn {
+  width: 30%;
+  padding: 1rem;
+}
+
+.banner-content .banner-explore-nearby-btn {
+  font-size: 0.7rem;
+  font-weight: var(--black-font-weight);
+  color: var(--blcak);
+  text-transform: none;
+  background-color: var(--white);
+}
+
+.banner-content .banner-explore-nearby-btn:hover {
+  background-color: var(--white);
+}
+
+/* banner @madia query */
+
+@media (max-width: 667px) {
+  .banner {
+    height: 50vh;
+  }
+
+  .banner-content {
+    width: 85%;
+    padding-top: 23%;
+  }
+
+  .banner-content .banner-title {
+    width: 80%;
+    margin: 0;
+  }
+  .banner-content .banner-title > h1 {
+    font-size: 1rem;
+  }
+
+  .banner-content > p {
+    width: 70%;
+    font-size: 0.8rem;
+    color: var(--white);
+  }
+}

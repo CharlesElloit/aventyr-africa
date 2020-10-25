@@ -1,0 +1,98 @@
+header {
+  width: 100%;
+  height: 11%;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 200;
+  color: white;
+  /* background: transparent; */
+  background-color: #ffffff;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  transition: background 250ms ease-in;
+}
+
+.header-onScroll {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+}
+
+.app-bar {
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  color: white !important;
+  display: flex !important;
+}
+
+.logo {
+  color: #ec3737;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.app-bar .experiences {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.app-bar .experiences .experiences_link {
+  margin: 0 3rem;
+}
+
+.header-content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-links {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.left-links a {
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  margin: 0 1rem;
+}
+
+.sortIcon {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.header-search-icon {
+  margin-top: 0.7rem !important;
+}
+
+/* Header @madia query */
+
+@media (max-width: 667px) {
+  header {
+    color: var(--white);
+    background: transparent;
+    position: relative;
+  }
+
+  .logo {
+    margin: -2rem 0 0 -2rem;
+  }
+  .header-content a {
+    color: var(--white);
+  }
+  .experiences {
+    display: none;
+  }
+
+  .left-links .left-link-avatar {
+    display: none;
+  }
+
+  .left-links .menu {
+    color: var(--white);
+    margin-right: -5rem;
+  }
+}

@@ -1,0 +1,31 @@
+.recommanded-tour-container {
+  margin-top: 5% !important;
+  width: 100% !important;
+}
+
+.recommanded-tour-container > h1 {
+  font-size: 1.5rem;
+}
+
+.recommanded-tours {
+  margin-top: 1rem !important;
+}
+
+.scrollable {
+  /* width: 100%; */
+  display: flex;
+  min-width: 120px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* RecommandedTour @madia queries */
+@media (max-width: 667px) {
+  .scrollable {
+    min-width: 80px;
+  }
+  .recommanded-tour-container > h1 {
+    font-size: 1rem;
+    margin-left: 0.4rem;
+  }
+}

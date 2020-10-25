@@ -1,0 +1,11 @@
+.datepicker {
+  position: absolute;
+  left: 15%;
+  margin-top: 0.3rem;
+  width: 50vw;
+  z-index: 100;
+  padding: 1rem;
+  border-radius: 30px;
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+}
