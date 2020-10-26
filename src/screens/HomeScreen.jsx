@@ -1,8 +1,9 @@
-import React from "react";
-import Banner from "../components/banner/Banner";
-import RecommandedTours from "../components/recommandedTours/RecommandedTours";
-import Footer from "../components/footer/Footer";
-import FeatureDistanation from "../components/featureDistanation/FeatureDistanation";
+import React from "react"
+import Banner from "../components/banner/Banner"
+import RecommandedTours from "../components/recommandedTours/RecommandedTours"
+import Footer from "../components/footer/Footer"
+import FeatureDistanation from "../components/featureDistanation/FeatureDistanation"
+import BottomNavigation from "../components/bottomNavigation/BottomNavigation"
 
 function HomeScreen() {
   return (
@@ -14,8 +15,9 @@ function HomeScreen() {
       <RecommandedTours />
       <FeatureDistanation />
       <Footer />
+      <BottomNavigation />
     </>
-  );
+  )
 }
 
-export default HomeScreen;
+export default HomeScreen

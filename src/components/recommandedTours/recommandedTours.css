@@ -1,6 +1,6 @@
 .recommanded-tour-container {
   margin-top: 5% !important;
-  width: 100% !important;
+  width: 85% !important;
 }
 
 .recommanded-tour-container > h1 {
@@ -21,6 +21,9 @@
 
 /* RecommandedTour @madia queries */
 @media (max-width: 667px) {
+  .recommanded-tour-container {
+    width: 100% !important;
+  }
   .scrollable {
     min-width: 80px;
   }

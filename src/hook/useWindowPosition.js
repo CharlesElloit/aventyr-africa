@@ -1,19 +1,18 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react"
 
 export default function useWindowPosition(id) {
-  const [animation, setAnimation] = useState(false);
+  const [animation, setAnimation] = useState(false)
 
   useLayoutEffect(() => {
     function updatePositionOnScoll() {
-      const offsetSetWindowHight = window.document.getElementById(id)
-        .offsetHeight;
-      if (window.pageYOffset > offsetSetWindowHight * 0.7) setAnimation(true);
+      const offsetSetWindowHight = window.document.getElementById(id).offsetHeight
+      if (window.pageYOffset > offsetSetWindowHight * 0.7) setAnimation(true)
     }
 
-    window.addEventListener("scroll", updatePositionOnScoll);
-    updatePositionOnScoll();
-    return window.removeEventListener("scroll", updatePositionOnScoll);
-  }, [id]);
+    window.addEventListener("scroll", updatePositionOnScoll)
+    updatePositionOnScoll()
+    return window.removeEventListener("scroll", updatePositionOnScoll)
+  }, [id])
 
-  return animation;
+  return animation
 }

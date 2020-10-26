@@ -1,9 +1,9 @@
-import React from "react";
-import Header from "../header/Header";
-import Button from "@material-ui/core/Button";
+import React from "react"
+import Header from "../header/Header"
+import Button from "@material-ui/core/Button"
 
-import "./banner.css";
-import Search from "../search/Search";
+import "./banner.css"
+import Search from "../search/Search"
 
 const Banner = ({ title, subtitle }) => {
   return (
@@ -19,7 +19,7 @@ const Banner = ({ title, subtitle }) => {
         <Button className="banner-explore-nearby-btn">Explore nearby</Button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Banner;
+export default Banner

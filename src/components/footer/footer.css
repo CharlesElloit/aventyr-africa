@@ -47,3 +47,11 @@ footer .copyright {
   color: var(--text-gray-color);
   border-top: var(--border-top);
 }
+
+/* footer @media queires */
+
+@media (max-width: 667px) {
+  footer {
+    display: none;
+  }
+}

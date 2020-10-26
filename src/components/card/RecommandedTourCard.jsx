@@ -1,27 +1,36 @@
-import React from "react";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import "./recommandedTourCard.css";
+import React from "react"
+import "./recommandedTourCard.css"
+import { Link } from "react-router-dom"
+import Card from "@material-ui/core/Card"
+import StarIcon from "@material-ui/icons/Star"
+import CardMedia from "@material-ui/core/CardMedia"
+import StarBorderIcon from "@material-ui/icons/StarBorder"
+import StarFilledIcon from "@material-ui/icons/StarHalfOutlined"
 
-function RecommandedTourCard({ imageUrl }) {
+function RecommandedTourCard(props) {
+  const { imageUrl, title, descripttion, ratings } = props
+
   return (
     <div className="card-container">
       <Card className="card">
-        <CardMedia
-          className="card-img media"
-          image={imageUrl}
-          title="Paella dish"
-        />
-        <CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            <button>Explore</button>
-          </Typography>
-        </CardContent>
+        <Link to="/explore">
+          <CardMedia className="card-img media" image={imageUrl} title={title} />
+        </Link>
       </Card>
+      <div className="card-info">
+        <h1>{title}</h1>
+        <div className="rating">
+          <p>
+            <StarIcon className="fullStar ratings" />
+            <StarFilledIcon className="ratings" />
+            <StarBorderIcon className="ratings" /> {ratings}
+          </p>
+        </div>
+        <Link to="/explore">Explore more</Link>
+        <p>{descripttion}</p>
+      </div>
     </div>
-  );
+  )
 }
 
-export default RecommandedTourCard;
+export default RecommandedTourCard

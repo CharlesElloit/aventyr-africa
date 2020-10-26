@@ -1,3 +1,5 @@
+/* GLOBAL STYLE FOR THE APPLICATION */
+
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -11,6 +13,7 @@
   --dark-background-color: #dddddd;
   --box-shadow: 1px 2px 2px 1px #dadada;
   --font-family: "Montserrat", sans-serif;
+  --border: 1px solid rgb(221, 221, 221);
   --border-top: 1px solid rgb(221, 221, 221);
 }
 
@@ -61,7 +64,7 @@ p {
   margin-right: 1rem !important;
 }
 
-/* whole app madia queries */
+/*Global app madia queries */
 @media (max-width: 667px) {
   .card {
     margin-right: 0 !important;

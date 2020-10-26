@@ -29,6 +29,12 @@
   color: white;
 }
 
+.banner-content > p {
+  width: 70%;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
 .explore_near_by_btn {
   width: 30%;
   padding: 1rem;

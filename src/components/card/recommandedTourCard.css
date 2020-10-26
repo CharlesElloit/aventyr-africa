@@ -1,21 +1,55 @@
 .card-container {
   max-width: 230px;
   min-height: 120px;
-  max-height: 400px;
+  max-height: 500px;
   object-fit: contain;
 }
 
 .card {
-  width: 230px;
+  width: 250px;
   max-width: 300px;
-  max-height: 400px;
+  max-height: 300px;
   margin-right: 1rem;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
+  box-shadow: var(--box-shadow);
 }
 
 .media {
   height: 100%;
+  object-fit: contain;
+}
+
+.card-container .card-info {
+  width: 95%;
+}
+
+.card-container .card-info > p {
+  font-size: 0.8rem;
+  font-family: var(--font-family);
+  font-weight: var(--medium-font-weight);
+}
+
+.card-container .card-info > h1 {
+  margin: 1rem 0 0.5rem 0;
+  font-weight: var(--bold-font-weight);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container .card-info > a {
+  font-size: 0.6rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-weight: var(--bold-font-weight);
+  box-shadow: var(--box-shadow);
+}
+
+.ratings {
+  font-size: 20px !important;
+}
+
+.fullStar {
+  color: yellow !important;
 }
 
 /* RecommandedTourCard @madia queries */
@@ -30,5 +64,9 @@
     height: "100%";
     object-fit: "cover";
     padding-top: "56.25%";
+  }
+
+  .card-container .card-info {
+    display: none;
   }
 }
